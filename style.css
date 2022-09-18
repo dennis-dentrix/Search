@@ -26,6 +26,9 @@ body {
   height: 5rem;
   margin: 1rem 3rem;
   width: 0;
+
+  display: flex;
+  align-items: center;
 }
 
 .input {
@@ -35,7 +38,7 @@ body {
   /* padding: 1.5rem; */
   height: 5rem;
   width: 0;
-  transition: width 0.3s ease;
+  /* transition: width 0.3s ease; */
 }
 
 .btn {
@@ -48,17 +51,24 @@ body {
   left: 0;
   height: 5rem;
   width: 5rem;
-  transition: transform 0.3s ease;
+  /* transition: transform 0.3s ease; */
+
+  position: static,
 }
+
+
 
 .btn:focus,
 .input:focus {
   outline: none;
 }
 
+
 .active {
   padding: 1.5rem;
   width: 20rem;
+
+
 }
 
 .search.active .btn {
@@ -75,7 +85,7 @@ body {
   height: calc(100vh + 60px);
   margin: 2rem;
   z-index: -1;
-  filter: blur(30px);
+  filter: blur(0);
 }
 
 .loading-text {
